@@ -8,7 +8,7 @@ def create_task(title):
     global _next_id
     task = {"id": _next_id, "title": title}
     _tasks.append(task)
-    _next_id += 1
+    _next_id += 2
     return task
 
 
