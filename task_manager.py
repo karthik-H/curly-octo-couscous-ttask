@@ -6,6 +6,10 @@ _next_id = 1
 
 def create_task(title):
     global _next_id
+    if not isinstance(title, str):
+        raise TypeError("Title must be a string.")
+    if title == "":
+        raise ValueError("Title cannot be empty.")
     task = {"id": _next_id, "title": title}
     _tasks.append(task)
     _next_id += 1
