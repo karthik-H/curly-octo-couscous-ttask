@@ -25,6 +25,8 @@ def update(task_id, new_title):
 
 
 def delete(task_id):
+    if not isinstance(task_id, int):
+        return {"error": "Task ID must be an integer."}
     if task_manager.delete_task(task_id):
         return {"success": True}
     return {"error": f"Task with ID {task_id} not found."}
