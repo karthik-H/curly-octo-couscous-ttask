@@ -20,7 +20,6 @@ def update_task(db: Session, task_id: int, task: task_schema.TaskCreate):
     db_task = db.query(task_model.Task).filter(task_model.Task.id == task_id).first()
     if db_task:
         db_task.title = task.title
-        db_task.description = task.description
         db_task.completed = task.completed
         db.commit()
         db.refresh(db_task)
