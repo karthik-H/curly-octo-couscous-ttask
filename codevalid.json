@@ -1,0 +1,36 @@
+{
+  "breakdowns": [
+    {
+      "id": "create_task",
+      "header": "Create Task",
+      "description": "Creates a new task using the POST /tasks/ endpoint.",
+      "conditions": []
+    },
+    {
+      "id": "list_tasks",
+      "header": "List Tasks",
+      "description": "Retrieves a list of tasks using the GET /tasks/ endpoint.",
+      "conditions": []
+    },
+    {
+      "id": "get_task",
+      "header": "Get Specific Task",
+      "description": "Retrieves a specific task by its ID using the GET /tasks/{task_id} endpoint.",
+      "conditions": []
+    },
+    {
+      "id": "update_task",
+      "header": "Update Task",
+      "description": "Updates a specific task by its ID using the PUT /tasks/{task_id} endpoint.",
+      "conditions": []
+    },
+    {
+      "id": "delete_task",
+      "header": "Delete Task",
+      "description": "Deletes a specific task by its ID using the DELETE /tasks/{task_id} endpoint.",
+      "conditions": []
+    }
+  ],
+  "last_updated": "2025-12-24T01:39:24.002494",
+  "version": "1.0"
+}
