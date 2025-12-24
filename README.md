@@ -18,7 +18,7 @@ This is a simple task management API built with FastAPI and SQLAlchemy.
     ```
 
 ## API Endpoints
-
+ 
 The API will be available at `http://127.0.0.1:8000`.
 
 *   `POST /tasks/`: Create a new task.
