@@ -22,6 +22,8 @@ This is a simple task management API built with FastAPI and SQLAlchemy.
 The API will be available at `http://127.0.0.1:8000`.
 
 *   `POST /tasks/`: Create a new task.
+* - a new task should not ahave any users assigned
+* - task should always have a name
 *   `GET /tasks/`: Get a list of tasks.
 *   `GET /tasks/{task_id}`: Get a specific task.
 *   `PUT /tasks/{task_id}`: Update a task.
