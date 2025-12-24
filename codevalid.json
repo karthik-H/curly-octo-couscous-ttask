@@ -4,7 +4,10 @@
       "id": "create_task",
       "header": "Create Task",
       "description": "Creates a new task using the POST /tasks/ endpoint.",
-      "conditions": []
+      "conditions": [
+        "A new task should not have any users assigned.",
+        "Task should always have a name."
+      ]
     },
     {
       "id": "list_tasks",
@@ -31,6 +34,6 @@
       "conditions": []
     }
   ],
-  "last_updated": "2025-12-24T01:39:24.002494",
+  "last_updated": "2025-12-24T01:40:20.605227",
   "version": "1.0"
 }
